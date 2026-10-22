@@ -1,3 +1,131 @@
 <resources>
-    <string name="app_name">dutrail-android-app</string>
+    <string name="app_name">Dutrail</string>
+
+    <!-- Ações -->
+    <string name="action_back">Voltar</string>
+    <string name="action_retry">Tentar novamente</string>
+    <string name="action_retry_now">Enviar agora</string>
+    <string name="action_show">Mostrar</string>
+    <string name="action_hide">Ocultar</string>
+    <string name="action_record">Gravar</string>
+    <string name="action_start">Iniciar</string>
+    <string name="action_pause">Pausar</string>
+    <string name="action_resume">Retomar</string>
+    <string name="action_finish">Terminar</string>
+    <string name="action_discard">Descartar</string>
+    <string name="action_keep_recording">Continuar gravando</string>
+    <string name="action_show_route">Ver trajeto</string>
+    <string name="action_go_to_list">Ir para as atividades</string>
+    <string name="action_open_settings">Abrir configurações</string>
+    <string name="action_allow_location">Permitir localização</string>
+    <string name="action_enable_location">Ativar localização</string>
+    <string name="action_logout">Sair</string>
+    <string name="action_logout_all">Sair de todos os dispositivos</string>
+
+    <!-- Auth -->
+    <string name="login_title">Entrar</string>
+    <string name="login_submit">Entrar</string>
+    <string name="login_create_account">Criar uma conta</string>
+    <string name="signup_title">Criar conta</string>
+    <string name="signup_submit">Criar conta</string>
+    <string name="signup_have_account">Já tenho conta</string>
+    <string name="field_name_optional">Nome (opcional)</string>
+    <string name="field_email">Email</string>
+    <string name="field_password">Senha</string>
+    <string name="hint_password_rules">Mínimo de %1$d caracteres</string>
+    <string name="error_email_empty">Informe o email.</string>
+    <string name="error_email_invalid">Email inválido.</string>
+    <string name="error_password_missing">Informe a senha.</string>
+    <string name="error_password_short">A senha precisa de pelo menos %1$d caracteres.</string>
+    <string name="error_password_long">A senha pode ter no máximo %1$d caracteres.</string>
+    <string name="error_name_long">O nome pode ter no máximo %1$d caracteres.</string>
+    <string name="error_invalid_credentials">Email ou senha incorretos.</string>
+    <string name="error_email_taken">Este email já está cadastrado. Faça login.</string>
+    <string name="error_signup_rejected">Não foi possível criar a conta com esses dados. Confira o email e escolha outra senha (senhas que já apareceram em vazamentos não são aceitas).</string>
+    <string name="error_too_many_attempts">Muitas tentativas. Aguarde alguns minutos e tente novamente.</string>
+    <string name="error_too_many_attempts_wait">Muitas tentativas. Tente de novo em %1$d s.</string>
+    <string name="logout_all_not_confirmed">Você saiu deste aparelho, mas não foi possível confirmar o encerramento das outras sessões (sem conexão).</string>
+
+    <!-- Erros genéricos -->
+    <string name="error_network">Sem conexão com o servidor. Verifique sua internet.</string>
+    <string name="error_rate_limited">Muitas requisições. Aguarde um pouco e tente novamente.</string>
+    <string name="error_server">O servidor está com problemas. Tente novamente mais tarde.</string>
+    <string name="error_not_found">Não encontrado.</string>
+    <string name="error_unknown">Algo deu errado. Tente novamente.</string>
+
+    <!-- Atividades -->
+    <string name="activities_title">Atividades</string>
+    <string name="activities_empty_title">Nenhuma atividade ainda</string>
+    <string name="activities_empty_body">Toque em Gravar para registrar sua primeira corrida.</string>
+    <string name="activity_detail_title">Atividade</string>
+    <string name="activity_not_found">Atividade não encontrada.</string>
+    <string name="account_menu">Conta</string>
+    <string name="metric_distance">Distância</string>
+    <string name="metric_distance_km">Distância (km)</string>
+    <string name="metric_duration">Tempo</string>
+    <string name="metric_time">Tempo</string>
+    <string name="metric_moving_time">Tempo em movimento</string>
+    <string name="metric_elapsed_time">Tempo total</string>
+    <string name="metric_avg_pace">Pace médio</string>
+    <string name="metric_current_pace">Pace atual</string>
+    <string name="metric_elevation_gain">Ganho de elevação</string>
+    <string name="metric_calories">Calorias</string>
+    <string name="metric_avg_hr">FC média</string>
+    <string name="metric_max_hr">FC máxima</string>
+    <string name="value_km">%1$s km</string>
+    <string name="value_pace">%1$s /km</string>
+    <string name="value_meters">%1$d m</string>
+    <string name="value_kcal">%1$d kcal</string>
+    <string name="value_bpm">%1$d bpm</string>
+
+    <!-- Envio -->
+    <string name="pending_title">%1$s · %2$s km</string>
+    <string name="upload_status_saving">Salvando a atividade…</string>
+    <string name="upload_status_sending">Enviando…</string>
+    <string name="upload_status_offline">Sem conexão. A atividade está salva e será enviada automaticamente.</string>
+    <string name="upload_status_server">O servidor não aceitou o envio agora. Vamos tentar de novo automaticamente.</string>
+    <string name="upload_status_session">Faça login novamente para enviar esta atividade.</string>
+    <string name="upload_status_rejected">O servidor recusou o arquivo. A atividade continua salva neste aparelho.</string>
+    <string name="upload_status_too_large">A atividade passa de 10 MB, o limite de envio. Ela continua salva neste aparelho.</string>
+    <string name="upload_status_file_missing">O arquivo da atividade não foi encontrado neste aparelho.</string>
+    <string name="upload_background_hint">Pode sair desta tela: o envio continua em segundo plano.</string>
+
+    <!-- Preparação da gravação -->
+    <string name="setup_title">Nova corrida</string>
+    <string name="setup_title_resume">Retomar corrida</string>
+    <string name="setup_permission_title">Localização precisa</string>
+    <string name="setup_permission_body">O Dutrail usa a localização precisa do aparelho para medir distância, pace e o trajeto da corrida, inclusive com a tela apagada.</string>
+    <string name="setup_permission_denied">A permissão de localização foi negada. Para gravar, abra as configurações do app e permita a localização precisa.</string>
+    <string name="setup_gps_off_title">Localização desligada</string>
+    <string name="setup_gps_off_body">Ative a localização do aparelho para gravar a corrida.</string>
+    <string name="setup_signal_waiting">Aguardando sinal do GPS. Fique em um lugar aberto.</string>
+    <string name="setup_signal_ready">Sinal pronto. Bom treino!</string>
+    <string name="setup_notifications_off">As notificações estão desativadas: a gravação funciona, mas você não verá os controles na barra de notificações.</string>
+    <string name="gps_none">Sem sinal de GPS</string>
+    <string name="gps_weak">GPS fraco</string>
+    <string name="gps_fair">GPS razoável</string>
+    <string name="gps_good">GPS bom</string>
+    <string name="gps_with_accuracy">%1$s · ±%2$d m</string>
+
+    <!-- Gravação -->
+    <string name="recording_paused">PAUSADO</string>
+    <string name="interrupted_title">Gravação interrompida</string>
+    <string name="interrupted_body">A corrida iniciada em %1$s (%2$s km) foi interrompida antes de terminar. Deseja retomar de onde parou ou finalizar e salvar como está?</string>
+    <string name="laps_empty">As parciais aparecem a cada km.</string>
+    <string name="lap_header_km">Km</string>
+    <string name="lap_header_time">Tempo</string>
+    <string name="lap_header_pace">Pace</string>
+    <string name="finish_title">Terminar a corrida?</string>
+    <string name="finish_body">A atividade será salva e enviada para sua conta.</string>
+    <string name="finish_empty_title">Nada foi gravado</string>
+    <string name="finish_empty_body">Nenhuma distância foi registrada. Deseja descartar esta gravação?</string>
+    <string name="notification_channel_recording">Gravação de atividade</string>
+    <string name="notification_recording">Corrida em andamento</string>
+    <string name="notification_paused">Corrida pausada</string>
+    <string name="notification_distance">%1$s km</string>
+
+    <!-- Mapa -->
+    <string name="route_title">Trajeto</string>
+    <string name="route_no_recording">Nenhuma gravação em andamento.</string>
+    <string name="route_waiting_points">Aguardando os primeiros pontos…</string>
 </resources>
